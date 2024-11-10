@@ -4,6 +4,22 @@ import numpy as np
 import cv2
 import easyocr
 
+# Set background image using custom CSS
+bg_image_url = "https://raw.githubusercontent.com/ansabb420/CV_lab/main/BG.jpg"  # Updated URL
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url('{bg_image_url}');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # Initialize OCR reader
 @st.cache_resource
 def initialize_ocr():
