@@ -2,3 +2,4 @@ numpy
 streamlit
 opencv_python_headless
 Pillow
+easyocr
